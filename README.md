@@ -1,2 +1,8 @@
-# authentication-and-authorization
-This is the project for server authentication and jwt authorization with express. Let's create a new world with shinobi group. Server is using typescript and it's reusable basic component.
+# How it works
+For authentication visit "/register"; Post username & password request in the body to authenticate; Your data will be saved in the database (password will be hashed).
+For authorization visit "/login"; Post username & password request in the body to authorize; if successfull you'll recieve a token in the response header.
+You can use the token to see the protected path "/api/posts"; if allowed you'll see the top secret information.
+Or you can upload a file in databse if you're logged in. Just use that token and visit "/upload".
+
+# Keywords
+Main technologies used in this project are: Nodejs, Expressjs, TypeScript, JWT, PostgreSQL, TypeORM, Joi, BCrypt, Docker, multer
